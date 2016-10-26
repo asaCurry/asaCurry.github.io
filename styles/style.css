@@ -1,0 +1,245 @@
+
+/*html*/
+box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* tag styles */
+
+h1 {
+    font-family: 'Ovo', serif;
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Ovo', serif;
+    color: white;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Ovo', serif;
+    padding-bottom: 5px;
+    border-bottom: solid 2px white;
+}
+
+p {
+
+}
+
+a {
+    color: lightseagreen
+}
+
+/* body */
+.top-header {
+    color: #fff;
+    width: 100%;
+    border-bottom: 3px solid darkgray;
+    margin-bottom: 5px;
+   text-align: top;
+
+}
+.main-header {
+   background: linear-gradient(to top, #fff 0%, transparent 50%), url('../images/sand-dune.jpeg') no-repeat fixed center;
+   padding-top: 50px;
+   padding-bottom: 100px;
+   height: 850px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid darkgrey;
+    color: #fff;
+}
+
+.header-style {
+    text-align: center;
+    text-shadow: 0 0 3px 3px darkgrey;
+
+}
+
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    line-height: 1.3;
+    color: darkgrey;
+}
+
+/* container */
+
+.container {
+
+    width: 70%;
+    height: 400px;
+    margin:  0 auto;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(192,192,192, 0.5);
+  
+
+}
+/* floating containers */
+
+.sectondary-content {
+overflow: auto;
+}
+.container-development {
+
+    text-align: center;
+    font-size: 130%;
+    float: left;
+    width: 40%;
+    height: 375px;
+    padding: 20px;
+    margin: 0 0 0 20px;
+    background:  url('../images/laptop_desk_plant.jpg') no-repeat center / cover;
+    border-style: solid white;
+    border-radius: 10px;
+    line-height: 2;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6), 10px 10px 10px darkgrey;
+
+}
+
+.container-strategy {
+    text-align: center;
+    float: right;
+    font-size: 130%;
+    width: 40%;
+    height: 375px;
+    padding: 20px;
+    margin: 0 20px 0 0;
+    background:  url('../images/coffee_notebook.jpg') no-repeat center / cover;
+    border-style: solid white;
+    border-radius: 10px;
+    line-height: 2;
+    box-shadow: 10px 10px 10px darkgrey;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6), 10px 10px 10px darkgrey;
+
+}
+
+.container-about {
+    text-align: left;
+    display: inline-block;
+    float: left;
+    font-size: 130%;
+    color: rgb(255,255,255);
+    width: 340px;
+    height: 385px;
+    padding: 20px 20px 50px 20px;
+    margin: 0px 0px 40px 6.5%;
+    border-style: solid white;
+    border-radius: 10px;
+    line-height: 2;
+    /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6); */
+
+}
+/* page sections */
+
+.container-split {
+    color: white;
+    height: 450px;
+    background: white;
+    padding: 0 0 0 0;
+    margin: 30px 0 30px 0;
+
+}
+.container-project-design {
+    clear:both;
+    height: 350px;
+    background: lightgrey;
+    Padding: 30px;
+
+}
+
+.container-project-ideahack {
+  
+    height: 650px;
+    background: white;
+    padding: 30px;
+    background:  url('../images/white_room_construction.jpg') no-repeat center / cover;
+    background-position: center bottom;
+    box-shadow: inset 0 0 0 1000px rgba(255,255,255,.6); 
+    /* box-shadow: inset 0 -20px 40px 20px rgba(0,0,0,.6); */
+    color: darkgrey !important;
+}
+
+
+.container-project-partner {
+    height: 650px;
+    background:  url('../images/cutting-board.jpg') no-repeat left / cover;
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    background:  url('../images/mail-box-line.jpg') no-repeat top / cover;
+    background-position: center ;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6), 0px 10px 10px darkgrey;
+    padding: 20px;
+    margin-top: 5px solid white;
+
+}
+
+.footer-container {
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-title {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin: 70px 0 0 0;
+}
+
+.icon-email {
+    text-align: center;
+    width: 30%;
+    color: #fff;
+    padding:0 0;
+    margin: 0 0 0 0;
+}
+.icon-phone {
+    text-align: center;
+    width: 30%;
+    color: #fff;
+    padding:0 0;
+    margin: 0 0 0 0;
+}
+.footer-email {
+    width: 40%;
+    margin: 0 0 0 0;
+    color: #fff;
+    border: solid 3px #fff;
+    margin: 0 0 140px 0;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer-phone {
+    width: 40%;
+    margin: 0 0 0 0;
+    color: #fff;
+    border: solid 3px #fff;
+    margin: 0 0 140px 0;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-github {
+    color: #fff;
+}
+/*clearfix */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
