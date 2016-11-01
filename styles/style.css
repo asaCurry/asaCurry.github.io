@@ -4,6 +4,8 @@ box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 /* tag styles */
@@ -32,7 +34,8 @@ p {
 }
 
 a {
-    color: lightseagreen
+    color: #fff;
+    text-decoration: none;
 }
 
 /* body */
@@ -53,6 +56,7 @@ a {
     background-position: center;
     border-bottom: 3px solid darkgrey;
     color: #fff;
+    transition: 1s ease-in-out;
 }
 
 .header-style {
@@ -92,12 +96,13 @@ overflow: auto;
 
     text-align: center;
     font-size: 130%;
+    color: #fff;
     float: left;
     width: 40%;
     height: 375px;
     padding: 20px;
     margin: 0 0 0 20px;
-    background:  url('../images/laptop_desk_plant.jpg') no-repeat center / cover;
+    background:  url('../images/laptop_desk_plant_sm.jpg') no-repeat center / cover;
     border-style: solid white;
     border-radius: 10px;
     line-height: 2;
@@ -109,11 +114,12 @@ overflow: auto;
     text-align: center;
     float: right;
     font-size: 130%;
+    color: #fff;
     width: 40%;
     height: 375px;
     padding: 20px;
     margin: 0 20px 0 0;
-    background:  url('../images/coffee_notebook.jpg') no-repeat center / cover;
+    background:  url('../images/coffee_notebook_sm.jpg') no-repeat center / cover;
     border-style: solid white;
     border-radius: 10px;
     line-height: 2;
@@ -122,10 +128,68 @@ overflow: auto;
 
 }
 
+/* page sections */
+
+.container-split {
+    display: inline-block;
+    color: white;
+    height: 450px;
+    background: white;
+    padding: 50px 0 50px 0;
+    margin: 30px 0 30px 0;
+
+}
+.container-project-design {
+    clear:both;
+    height: 350px;
+    background: lightgrey;
+    padding: 30px;
+
+}
+
+/* project container */
+.container-project-ideahack {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 650px;
+    background: white;
+    padding: 30px;
+    background:  url('../images/white_room_construction.jpg') no-repeat center / cover,rgba(255,255,255,.6);
+    background-position: center bottom;
+    box-shadow: inset 0 0 0 1000px rgba(255,255,255,.6); 
+    /* box-shadow: inset 0 -20px 40px 20px rgba(0,0,0,.6); */
+    color: darkgrey !important;
+}
+.project-container {
+    width: 30%;
+    max-height: 450px;
+    margin: 0 0 0 0;
+    color: #fff;
+    background: rgba(192,192,192, 0.8);
+    margin: 100px 0 0 0;
+    text-align: center;
+    padding: 0;
+}
+
+.project-one {
+
+}
+
+
+/* about me container */
+.container-project-partner {
+    height: 650px;
+    background:  url('../images/cutting-board-sm.jpg') no-repeat left / cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4), 0px 10px 10px darkgrey;
+    padding: 30px;
+}
+
 .container-about {
     text-align: left;
     display: inline-block;
     float: left;
+    height: 460px;
     font-size: 130%;
     color: rgb(255,255,255);
     width: 340px;
@@ -136,50 +200,14 @@ overflow: auto;
     border-radius: 10px;
     line-height: 2;
     /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6); */
-
-}
-/* page sections */
-
-.container-split {
-    color: white;
-    height: 450px;
-    background: white;
-    padding: 0 0 0 0;
-    margin: 30px 0 30px 0;
-
-}
-.container-project-design {
-    clear:both;
-    height: 350px;
-    background: lightgrey;
-    Padding: 30px;
-
-}
-
-.container-project-ideahack {
-  
-    height: 650px;
-    background: white;
-    padding: 30px;
-    background:  url('../images/white_room_construction.jpg') no-repeat center / cover;
-    background-position: center bottom;
-    box-shadow: inset 0 0 0 1000px rgba(255,255,255,.6); 
-    /* box-shadow: inset 0 -20px 40px 20px rgba(0,0,0,.6); */
-    color: darkgrey !important;
-}
-
-
-.container-project-partner {
-    height: 650px;
-    background:  url('../images/cutting-board.jpg') no-repeat left / cover;
-    padding: 30px;
-}
+} 
+/*footer container */
 
 .footer {
     display: flex;
     justify-content: center;
     height: 550px;
-    background:  url('../images/mail-box-line.jpg') no-repeat top / cover;
+    background:  url('../images/mail-box-line-sm.jpg') no-repeat top / cover;
     background-position: center ;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6), 0px 10px 10px darkgrey;
     padding: 20px;
@@ -200,19 +228,33 @@ overflow: auto;
     margin: 70px 0 0 0;
 }
 
+
 .icon-email {
     text-align: center;
     width: 30%;
     color: #fff;
     padding:0 0;
     margin: 0 0 0 0;
+    transition: 1s ease-in-out;
 }
+
+.icon-email:hover {
+transform: scale(1.3,1.3);
+
+}
+
 .icon-phone {
     text-align: center;
     width: 30%;
     color: #fff;
     padding:0 0;
     margin: 0 0 0 0;
+    transition: 1s ease-in-out;
+}
+
+.icon-phone:hover {
+transform: scale(1.3,1.3);
+
 }
 .footer-email {
     width: 40%;
@@ -223,7 +265,16 @@ overflow: auto;
     text-align: center;
     padding: 30px 0;
 }
+
+
+.footer-email:hover {
+    transition: background, 1s, ease;
+    background: rgb(0, 0, 0);
+
+}
+
 .footer-phone {
+    text-decoration: none;
     width: 40%;
     margin: 0 0 0 0;
     color: #fff;
@@ -231,6 +282,12 @@ overflow: auto;
     margin: 0 0 140px 0;
     text-align: center;
     padding: 30px 0;
+}
+
+.footer-phone:hover {
+    transition: background, 1s, ease;
+    background: rgb(0, 0, 0);
+
 }
 
 .footer-github {
