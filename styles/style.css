@@ -48,8 +48,10 @@ a {
 
 }
 .main-header {
-   background: linear-gradient(to top, #fff 0%, transparent 50%), url('../images/sand-dune.jpeg') no-repeat fixed center;
-   padding-top: 50px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+   background: linear-gradient(to top, #fff 0%, transparent 50%), url('../images/sand-dune.jpeg') no-repeat fixed center;\
    padding-bottom: 100px;
    height: 850px;
     background-size: cover;
@@ -60,17 +62,29 @@ a {
 }
 
 .header-style {
+    width: 70%;
+    align-self: center;
     text-align: center;
-    text-shadow: 0 0 3px 3px darkgrey;
-
 }
 
+.header-copy {
+    width: 70%;
+    align-self: center;
+    font-size: 150%;
+}
+
+.header-copy-two {
+    width: 40%;
+    align-self: center;
+    font-size: 150%;
+    padding: 0 0 30px 0;
 }
 
 body {
     font-family: 'Muli', sans-serif;
     line-height: 1.3;
     color: darkgrey;
+    margin: 0;
 }
 
 /* container */
@@ -107,7 +121,13 @@ overflow: auto;
     border-radius: 10px;
     line-height: 2;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6), 10px 10px 10px darkgrey;
+    transition: box-shadow, 1s, ease-in-out;
 
+}
+
+.container-development:hover {
+
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.9), 10px 10px 10px darkgrey;
 }
 
 .container-strategy {
@@ -125,15 +145,21 @@ overflow: auto;
     line-height: 2;
     box-shadow: 10px 10px 10px darkgrey;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6), 10px 10px 10px darkgrey;
+    transition: box-shadow, 1s, ease-in-out;
 
 }
 
+.container-strategy:hover {
+
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.9), 10px 10px 10px darkgrey;
+}
 /* page sections */
 
 .container-split {
     display: inline-block;
     color: white;
-    height: 450px;
+    height: auto;
+    min-height: 450px;
     background: white;
     padding: 50px 0 50px 0;
     margin: 30px 0 30px 0;
@@ -190,7 +216,7 @@ overflow: auto;
     display: inline-block;
     float: left;
     height: 460px;
-    font-size: 130%;
+    font-size: 110%;
     color: rgb(255,255,255);
     width: 340px;
     height: 385px;
@@ -199,8 +225,14 @@ overflow: auto;
     border-style: solid white;
     border-radius: 10px;
     line-height: 2;
+    transition: font-weight, 2s, ease-in-out;
     /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6); */
 } 
+
+.container-about:hover {
+
+    font-weight: 600;
+}
 /*footer container */
 
 .footer {
@@ -239,7 +271,7 @@ overflow: auto;
 }
 
 .icon-email:hover {
-transform: scale(1.3,1.3);
+transform: scale(1.1,1.1);
 
 }
 
@@ -253,7 +285,7 @@ transform: scale(1.3,1.3);
 }
 
 .icon-phone:hover {
-transform: scale(1.3,1.3);
+transform: scale(1.1,1.1);
 
 }
 .footer-email {
