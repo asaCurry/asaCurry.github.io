@@ -198,7 +198,19 @@ overflow: auto;
     padding: 0;
 }
 
+.hidden {
+    display: none;
+}
+
 .project-one {
+
+}
+
+.project-two {
+
+}
+
+.project-three {
 
 }
 
